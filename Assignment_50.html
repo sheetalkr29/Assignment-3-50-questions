@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Basic Practice</title>
+</head>
+<body>
+    <!-- 
+Q1. Your team is building a college event page with a main heading,
+introduction, and three sections. Which semantic HTML elements would
+you choose for the page structure, and why?
+
+Answer:
+I would use <header> for the main heading or top part of the page,
+<section> for the three different sections, and <main> for the main
+content. I use these semantic tags because they clearly tell what
+each part of the webpage is about. This makes the HTML easier to
+understand and gives proper structure to the page.
+-->
+
+<header>
+    <h1>College Annual Event</h1>
+</header>
+
+<main>
+    <p>Welcome to our college annual event.</p>
+
+    <section>
+        <h2>About the Event</h2>
+        <p>This event is organized by our college.</p>
+    </section>
+
+    <section>
+        <h2>Events</h2>
+        <p>There will be different activities.</p>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <p>Contact the college office for more information.</p>
+    </section>
+</main>
+
+
+<!-- 
+Q2. You need to display five programming languages where the order
+does not matter. Which HTML list element should you use? Write a
+small example.
+
+Answer:
+I would use the <ul> tag because it is an unordered list and the
+order of the items does not matter. Each item inside the list is
+written using the <li> tag. The <ul> creates the list and <li>
+creates each individual list item.
+-->
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Java</li>
+</ul>
+
+
+<!-- 
+Q3. A student creates a button using a div because it looks like a
+button after CSS is applied. What HTML element would be more
+appropriate for the action, and why?
+
+Answer:
+I would use the <button> tag instead of <div>. A <div> is mainly
+used as a general container, while <button> is made specifically
+for clickable actions. So even if both can be styled to look the
+same, <button> is the correct HTML element for an action.
+-->
+
+<button type="submit">Submit</button>
+
+
+<!-- 
+Q4. A profile page contains a person's name, profile image, email
+address, and biography. Which HTML elements would you use for the
+image, email link, heading, and paragraph?
+
+Answer:
+I would use <h1> or another heading tag for the person's name,
+<img> for the profile image, <a> for the email link, and <p> for
+the biography. I use different elements because each element has
+a different purpose. The heading is for the person's name, the
+image tag displays the picture, the anchor tag creates the link,
+and the paragraph contains the biography.
+-->
+
+<h1>Sean Matt</h1>
+
+<img src="profile.jpg" alt="Rahul Kumar">
+
+<a href="">seanmatt@gmail.com</a>
+
+<p>Sean is a student and web development learner.</p>
+
+
+<!-- 
+Q5. You need a link that opens the university website in a new
+browser tab. Which HTML attribute controls the destination and
+which attribute can control where it opens?
+
+Answer:
+The <a> tag is used to create the link. The href attribute
+controls where the link goes, and the target attribute
+controls where the link opens. I would use target="_blank" when I
+want the website to open in a new tab.
+-->
+
+<a href="https://www.example.com" target="_blank">
+    Visit University Website
+</a>
+
+
+<!--
+Q6. A form asks for name, email, password, and date of birth.
+Which HTML input types would you choose for each field?
+
+Answer:
+For name, I would use type="text" because the user enters normal
+text. For email, I would use type="email" because it accepts an
+email-like value. For password, I would use type="password" so
+the password is hidden. For date of birth, I would use
+type="date" so the user can select a date.
+-->
+
+<input type="text" placeholder="Enter your name">
+
+<input type="email" placeholder="Enter your email">
+
+<input type="password" placeholder="Enter your password">
+
+<input type="date">
+
+
+<!-- 
+Q7. A login form has an email field. The browser should prevent
+submission when the field is empty. Which HTML attribute can
+provide this basic validation?
+
+Answer:
+I would use the required attribute. It tells the browser
+that the field must be filled before the form can be submitted.
+This gives basic browser-level validation without writing
+JavaScript.
+-->
+
+<input type="email" required>
+
+
+<!-- 
+Q8. An image fails to load. Which attribute should be added to img
+so users can still understand what the image represents?
+
+Answer:
+I would use the alt attribute. It provides alternative text
+for the image. If the image cannot load, the user can still
+understand what the image was about from the alt text.
+-->
+
+<img src="college.jpg" alt="College Building">
+
+
+<!-- 
+Q9. A student uses multiple h1 elements just to make text look
+large. Why should heading elements be selected based on document
+structure, and what should be used for visual sizing?
+
+Answer:
+Heading tags should be selected according to the structure and
+importance of the content, not just because the text looks big.
+For example, <h1> can be used for the main heading and <h2> for
+subheadings. If I only want to make text bigger or smaller, I
+should use CSS such as font-size.
+-->
+
+<h1>College Event</h1>
+<h2>About the Event</h2>
+
+<style>
+    h2 {
+        font-size: 30px;
+    }
+</style>
+
+
+<!--
+Q10. You need a navigation area containing links to Home, About,
+Courses, and Contact. Which semantic HTML element is appropriate?
+
+Answer:
+I would use the <nav> tag because it is specifically used for
+navigation links. It tells the browser and the developer that
+the links inside it are used for navigating between pages or
+sections.
+-->
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+<!-- 
+Q11. A product card has a unique product ID that JavaScript needs
+to read later. Which type of HTML attribute would you use for a
+custom value, and what naming convention should it follow?
+-->
+
+<!--
+Q12. You want every course card to share the same CSS rule. Which
+HTML attribute should you use, and what is its purpose?
+
+Answer:
+I would use the class attribute. A class can be given to
+multiple elements, so the same CSS rule can be applied to all
+course cards. This is useful when many elements need the same
+styling.
+-->
+
+<div class="course-card">HTML Course</div>
+<div class="course-card">CSS Course</div>
+<div class="course-card">JavaScript Course</div>
+
+<style>
+    .course-card {
+        background-color: lightblue;
+        padding: 20px;
+    }
+</style>
+
+
+<!-- 
+Q13. A developer writes id="card" on ten different elements. Why
+can this cause problems, and when should an id normally be used?
+
+Answer:
+It can cause problems because an id should normally be unique on
+one page. If I use the same id on many elements, it becomes
+difficult to identify one particular element correctly. I would
+normally use an id when I need to identify one specific element,
+while class can be reused on multiple elements.
+-->
+
+<div id="card">First Card</div>
+
+<div class="card">Second Card</div>
+<div class="card">Third Card</div>
+
+
+<!-- 
+Q14. You need a checkbox to be selected automatically when the
+page loads. Which HTML attribute can do this?
+
+Answer:
+I would use the checked attribute. It makes the checkbox
+selected automatically when the page loads.
+-->
+
+<input type="checkbox" checked>
+<label>I agree</label>
+
+
+<!-- 
+Q15. A form input should be disabled until the user selects a
+plan. Which HTML attribute can temporarily prevent editing?
+
+Answer:
+I would use the disabled attribute. It prevents the user
+from entering or changing the value of that form field until it
+is enabled again.
+-->
+
+<input type="text" disabled value="Select a plan first">
+
+
+<!-- 
+Q16. A button should submit a form, while another button should
+only run JavaScript. Which type value would you use for the
+second button?
+
+Answer:
+I would use type="button" for the second button. A normal submit
+button submits the form, but type="button" does not submit the
+form. It can be used for another action such as running
+JavaScript.
+-->
+
+<button type="submit">Submit Form</button>
+
+<button type="button">Click Me</button>
+
+
+<!-- 
+Q17. You want an input to display a short hint such as
+'Enter your phone number'. Which attribute is designed for this?
+
+Answer:
+I would use the placeholder attribute. It displays a short
+hint inside the input field and helps the user understand what
+they need to enter.
+-->
+
+<input type="text" placeholder="Enter your phone number">
+
+
+<!--
+Q18. A form field should accept only an email-like value using
+browser-level input validation. Which input type would you choose?
+
+Answer:
+I would use type="email". The browser recognizes it as an email
+field and provides basic validation for an email-like value.
+-->
+
+<input type="email" placeholder="Enter your email">
+
+
+<!-- 
+Q19. A website uses the same blue color for all primary buttons.
+The developer wants to change the color in one place. How could a
+CSS custom property help?
+-->
+
+
+<!-- 
+Q20. A heading has a large gap below it. Which box-model property
+would you inspect if the gap is outside the element's border?
+
+Answer:
+I would check the margin property because margin creates
+space outside the border of an element. If the gap is outside
+the heading, its bottom margin may be causing the extra space.
+-->
+
+<h2 style="margin-bottom: 50px;">
+    College Event
+</h2>
+
+<p>Event details are here.</p>
+
+
+<!-- 
+Q21. A card's text is too close to its border. Which box-model
+property should be increased?
+
+Answer:
+I would increase padding because padding creates space
+inside the border, between the content and the border. So it will
+give the text more space from the card's border.
+-->
+
+<div style="border: 2px solid black; padding: 30px;">
+    This text has space from the border.
+</div>
+
+
+<!-- 
+Q22. All paragraph text should use Arial and have a line-height
+of 1.6. Which CSS properties would you use?
+
+Answer:
+I would use font-family to set the font as Arial and
+line-height to control the space between lines. So I would
+use font-family: Arial and line-height: 1.6.
+-->
+
+<style>
+    p {
+        font-family: Arial;
+        line-height: 1.6;
+    }
+</style>
+
+<p>
+    This is a paragraph with Arial font and proper line spacing.
+</p>
+
+
+<!-- 
+Q23. You need a button to change its background color when the
+mouse pointer is over it. Which pseudo-class should be used?
+
+Answer:
+I would use the :hover pseudo-class. It applies CSS when
+the mouse pointer is placed over the element. So I can use it to
+change the button's background color when the user hovers over it.
+-->
+
+<style>
+    button:hover {
+        background-color: blue;
+        color: white;
+    }
+</style>
+
+<button>Hover Me</button>
+
+
+<!-- 
+Q24. A form input should receive a visible border when the user
+clicks into it. Which pseudo-class is commonly used?
+
+Answer:
+I would use the :focus pseudo-class. It works when the
+input is focused, for example when the user clicks inside the
+input or moves to it using the keyboard. I can use it to change
+the border.
+-->
+
+<style>
+    input:focus {
+        border: 2px solid blue;
+    }
+</style>
+
+<input type="text" placeholder="Enter your name">
+
+
+<!--
+Q25. Three cards should appear side-by-side on desktop and stack
+vertically on small screens. Which layout technique and
+responsive feature could you use?
+
+Answer:
+I would use Flexbox to place the cards side-by-side.
+-->
+
+
+
+<!--
+Q26. A student writes .card { color: red; } but the card's
+background remains white. Which property should be changed if the
+goal is a red background?
+
+Answer:
+The color property changes the text color, not the
+background. If I want the background to become red, I should use
+background-color: red;.
+-->
+
+<style>
+    .card {
+        background-color: red;
+    }
+</style>
+
+<div class="card">
+    Card
+</div>
+
+
+<!-- 
+Q27. You want a paragraph to show one line and display an
+ellipsis when text is too long. Which CSS properties could solve
+this?
+-->
+
+
+<!-- 
+Q28. A navigation link should have no underline normally but
+become underlined when hovered. Which CSS property and
+pseudo-class would you use?
+
+Answer:
+I would use text-decoration: none to remove the underline
+normally. Then I would use the :hover pseudo-class with
+text-decoration: underline so the underline appears when the
+mouse is over the link.
+-->
+
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<a href="#">Home</a>
+
+
+<!-- 
+Q29. A notification badge must stay in the same place relative
+to its parent card. Which position value is commonly used on the
+badge, and what should be applied to the parent?
+
+Answer:
+I would use position: absolute on the badge. On the parent
+card, I would use position: relative. This makes the absolute badge
+position itself according to the parent cardinstead of another
+part of the page.
+-->
+
+<style>
+    .card {
+        position: relative;
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+</style>
+
+<div class="card">
+    Product Card
+    <span class="badge">New</span>
+</div>
+
+
+<!-- 
+Q30. You need a header that stays visible at the top of the
+viewport while the user scrolls. Which position value could you
+consider, and what top value is typically required?
+
+Answer:
+I would use position: fixed because fixed positioning keeps the 
+element attached to the browser viewport while scrolling. 
+I would use top: 0 to keep the header at the top of the screen.
+-->
+
+<style>
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+</style>
+
+<header>
+    My Website
+</header>
+
+
+<!-- 
+Q31. A modal dialog should stay attached to the browser viewport
+and not move with normal document scrolling. Which position value
+is suitable?
+
+Answer:
+I would use position: fixed. Fixed positioning keeps the
+element attached to the viewport, so it does not move with the
+normal page content when the user scrolls.
+-->
+
+<style>
+    .modal {
+        position: fixed;
+        top: 100px;
+        left: 100px;
+        background-color: white;
+    }
+</style>
+
+<div class="modal">
+    Login
+</div>
+
+
+<!-- 
+Q32. A developer sets position: absolute on an icon but it appears
+in an unexpected location. What is the relationship between an
+absolutely positioned element and its nearest positioned ancestor?
+
+Answer:
+An absolutely positioned element is positioned relative to its
+nearest ancestor that has a position value other than static,
+such as relative, absolute, or fixed. If there is no such parent,
+it can be positioned relative to the page or another containing
+block. That is why we commonly give the parent
+position: relative.
+-->
+
+<style>
+    .box {
+        position: relative;
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+    }
+
+    .icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+</style>
+
+<div class="box">
+    <span class="icon">★</span>
+</div>
+
+
+<!--
+Q33. You want a decorative circle behind a card without affecting
+normal layout. Which position value and stacking-related property
+could be useful?
+
+Answer:
+I would use position: absolute for the decorative circle
+so it does not take normal space in the layout. 
+-->
+
+
+
+<!--
+Q34. A student uses position: relative and top: 20px. Does the
+element leave its original layout space? Explain.
+
+Answer:
+No, the element does not leave its original layout space.
+position: relative moves the element visually from its original
+position, but its original space is still kept in the layout.
+Here top: 20px moves the element 20px down from its original
+position.
+-->
+
+<style>
+    .box {
+        position: relative;
+        top: 20px;
+    }
+</style>
+
+<div class="box">
+    This box moves down.
+</div>
+
+
+<!-- 
+Q35. A sticky sidebar should remain in its normal place initially
+and then stick while scrolling within its scroll container. Which
+position value is designed for this?
+
+Answer:
+I would use position: sticky. It behaves like a normal
+element at first, but when the user scrolls to the given position,
+it sticks there within its scroll container. Usually I also give
+it a top value such as top: 0.
+-->
+
+<style>
+    .sidebar {
+        position: sticky;
+        top: 0;
+    }
+</style>
+
+<div class="sidebar">
+    Sticky Sidebar
+</div>
+
+
+<!-- 
+Q36. Two overlapping elements are positioned on the page. One
+must appear above the other. Which CSS property can control
+stacking order?
+-->
+
+<!-- 
+Q37. A button should look different when the mouse moves over it.
+Which pseudo-class would you use?
+
+Answer:
+I would use the :hover pseudo-class because it works when
+the mouse pointer is over the element. I can use it to change
+the button's color, background, border, or other styles.
+-->
+
+<style>
+    button:hover {
+        background-color: green;
+        color: white;
+    }
+</style>
+
+<button>Hover Me</button>
+
+
+<!-- 
+Q38. A form should highlight an input while the user is typing
+into it. Which pseudo-class detects the focused element?
+
+Answer:
+I would use the :focus pseudo-class. It detects when an
+element is focused, such as when the user clicks inside an input.
+I can use it to highlight the input while the user is using it.
+-->
+
+<style>
+    input:focus {
+        border: 2px solid blue;
+        outline: none;
+    }
+</style>
+
+<input type="text" placeholder="Enter your name">
+
+
+<!--
+Q39. You have a list and want to style only the first item
+differently. Which pseudo-class could you use?
+
+Answer:
+I would use the :first-child pseudo-class. It selects an
+element when it is the first child of its parent. So I can use it
+to style only the first list item differently.
+-->
+
+<style>
+    li:first-child {
+        color: red;
+    }
+</style>
+
+<ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+</ul>
+
+
+<!--
+Q40. You want every even table row to have a different background
+without adding extra classes. Which structural pseudo-class can
+help?
+
+Answer:
+I would use the :nth-child(even) pseudo-class. It selects
+the even-numbered child elements, so I can use it to style every
+even table row without adding separate classes.
+-->
+
+<style>
+    tr:nth-child(even) {
+        background-color: lightgray;
+    }
+</style>
+
+<table>
+    <tr>
+        <td>Tina</td>
+        <td>80</td>
+    </tr>
+
+    <tr>
+        <td>Hanni</td>
+        <td>90</td>
+    </tr>
+
+    <tr>
+        <td>Aman</td>
+        <td>75</td>
+    </tr>
+
+    <tr>
+        <td>Neha</td>
+        <td>88</td>
+    </tr>
+</table>
+
+
+<!-- 
+Q41. A heading needs a small decorative line before its text
+without adding another HTML element. Which pseudo-element could
+you use?
+
+Answer:
+I would use the ::before pseudo-element. It allows me to
+add generated content before the actual content of an element,
+so I do not need to create another HTML element just for the
+decorative line.
+-->
+
+<style>
+    h2::before {
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin-right: 10px;
+    }
+</style>
+
+<h2>About Us</h2>
+
+
+<!-- 
+Q42. A paragraph's first letter should be larger than the rest.
+Which pseudo-element is designed for this?
+
+Answer:
+I would use the ::first-letter pseudo-element. It allows
+me to style only the first letter of the text differently. So I
+can increase its font size without changing the complete
+paragraph.
+-->
+
+<style>
+    p::first-letter {
+        font-size: 35px;
+    }
+</style>
+
+<p>
+    This is my paragraph.
+</p>
+
+
+<!-- 
+Q43. You want to display a tooltip using generated content when
+a button is hovered. Which pseudo-element and pseudo-class
+combination could be used?
+
+Answer:
+I would use :hover to detect when the mouse is over the
+button and ::after to create the tooltip content. The
+hover state tells when to show it, and the pseudo-element creates
+the extra content without adding another HTML element.
+-->
+
+<style>
+    button {
+        position: relative;
+    }
+
+    button:hover::after {
+        content: "Click this button";
+        position: absolute;
+        top: 35px;
+        left: 0;
+    }
+</style>
+
+<button>Hover Me</button>
+
+
+<!-- 
+Q44. Explain the difference between a pseudo-class and a
+pseudo-element using practical examples such as :hover and
+::before.
+
+Answer:
+A pseudo-class is used to style an element in a particular state
+or condition. For example, :hover works when the mouse is over
+an element.
+
+A pseudo-element is used to style or add a specific part or
+generated content of an element. For example, ::before can add
+content before the element's actual content.
+
+So, in simple words, :hover changes the style based on a state,
+while ::before can create or style a specific part of an element.
+-->
+
+<style>
+    /* Pseudo-class */
+    button:hover {
+        background-color: blue;
+    }
+
+    /* Pseudo-element */
+    h2::before {
+        content: "★ ";
+    }
+</style>
+
+<button>Hover Me</button>
+
+<h2>About Us</h2>
+
+
+<!-- 
+Q45. A 300px-wide content box has 20px padding on both left and
+right and 2px borders on both sides. With box-sizing: content-box,
+what is the total rendered width? Show the calculation.
+
+Answer:
+With box-sizing: content-box, the declared width is only the
+content width. Padding and border are added separately.
+
+Content width = 300px
+Left + right padding = 20px + 20px = 40px
+Left + right border = 2px + 2px = 4px
+
+Total width = 300px + 40px + 4px
+Total width = 344px
+
+So the total rendered width will be 344px.
+-->
+
+<style>
+    .box {
+        width: 300px;
+        padding: 20px;
+        border: 2px solid black;
+        box-sizing: content-box;
+    }
+</style>
+
+<div class="box">
+    Content
+</div>
+
+
+<!-- 
+Q46. A developer wants a card's declared width to include padding
+and border. Which box-sizing value should be used?
+
+Answer:
+I would use box-sizing: border-box. With border-box, the
+width given to the element includes its content, padding, and
+border. This makes it easier to control the total size of the
+element.
+-->
+
+<style>
+    .card {
+        width: 300px;
+        padding: 20px;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+</style>
+
+<div class="card">
+    Card Content
+</div>
+
+
+<!-- 
+Q47. Two cards have different amounts of text, but the design
+requires equal-height cards in a row. Which layout approach could
+help without manually setting a fixed height?
+
+Answer:
+I would use Flexbox for the row of cards. Flexbox can make the
+items stretch to the same height when their height is not
+manually fixed. This is useful when the cards contain different
+amounts of content but should still look equal in height.
+-->
+
+<style>
+    .cards {
+        display: flex;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 20px;
+        border: 1px solid black;
+        flex: 1;
+    }
+</style>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Card 1</h3>
+        <p>Short content.</p>
+    </div>
+
+    <div class="card">
+        <h3>Card 2</h3>
+        <p>
+            This card has more content, but Flexbox can help
+            keep the cards equal in height.
+        </p>
+    </div>
+
+</div>
+
+
+<!-- 
+Q48. A button looks cramped because the text touches the border.
+Would you normally increase margin or padding? Explain why.
+
+Answer:
+I would increase padding. Padding creates space inside
+the element, between the text and the border. Margin creates
+space outside the element. Since the text is touching the border,
+I need more space inside, so padding is the correct choice.
+-->
+
+<style>
+    button {
+        padding: 15px 25px;
+    }
+</style>
+
+<button>Submit</button>
+
+
+<!-- 
+Q49. A section is too far away from the next section even though
+its own content spacing looks correct. Which box-model property
+would you inspect?
+
+Answer:
+I would inspect the margin property, especially
+margin-bottom. Margin creates space outside the element, so if
+one section is too far away from the next section, its margin may
+be creating that extra space.
+-->
+
+<style>
+    .section {
+        margin-bottom: 50px;
+    }
+</style>
+
+<section class="section">
+    <h2>First Section</h2>
+    <p>Content here.</p>
+</section>
+
+<section>
+    <h2>Second Section</h2>
+    <p>Content here.</p>
+</section>
+
+
+<!-- 
+Q50. You give an element width: 100%, but it becomes wider than
+its parent after adding padding. Explain why and how
+box-sizing: border-box changes the behavior.
+
+Answer:
+By default, box-sizing is content-box. This means width: 100%
+applies only to the content area. When I add padding and border,
+they are added outside that 100%, so the element can become
+wider than its parent.
+
+If I use box-sizing: border-box, the given width includes the
+content, padding, and border. So width: 100% stays within the
+parent's width.
+-->
+
+<style>
+    .box {
+        width: 100%;
+        padding: 20px;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+</style>
+
+<div class="box">
+    This box stays within the parent's width.
+</div>
+</body>
+</html>
